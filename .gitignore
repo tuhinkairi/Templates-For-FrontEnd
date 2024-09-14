@@ -1,0 +1,21 @@
+# Ignore all .log files
+*.log
+
+# Ignore node_modules folder (for a Node.js project)
+node_modules/
+
+# Ignore environment files
+.env
+
+# Ignore build directories
+build/
+dist/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore package-lock.json (if you want to skip it)
+package-lock.json
+
+# Ignore compiled Python files
+*.pyc

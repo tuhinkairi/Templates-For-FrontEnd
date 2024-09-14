@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js" defer></script>
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/slider.css">
+    <title>Your Blog Portfolio</title>
+</head>
+
+<body class="bg-gray-100 font-sans ">
+
+    <!-- Navigation -->
+    <nav id="nav_bar" class="bg-transparent p-4 text-white fixed top-0 left-0 right-0 z-50 ">
+        <div class="container mx-auto flex justify-between items-center ">
+            <div class="text-xl font-bold text-teal-500">YourLogo</div>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="hover:text-teal-500">Home</a></li>
+                <li><a href="/blog.html" class="hover:text-teal-500">Blog</a></li>
+                <li><a href="/about.html" class="hover:text-teal-500">About</a></li>
+                <li><a href="/contact.html" class="hover:text-teal-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="header_banner" class="bg-teal-600 text-white py-20 relative h-screen">
+        <div class="absolute top-0 left-0 right-0 bottom-0 bg-teal-600 opacity-60"></div>
+        <div class="container mx-auto text-center relative z-10">
+            <img src="profile-image.jpg" alt="Your Profile Image"
+                class="rounded-full w-32 h-32 mx-auto mb-4 border-4 border-white">
+            <h1 class="text-4xl font-bold mb-2">Your Full Name</h1>
+            <p class="text-lg">Web Developer &amp; Blogger</p>
+        </div>
+        <!-- Animation for hero section -->
+        <div class="absolute bottom-0 left-0 right-0 bg-teal-600 h-16">
+            <div class="container mx-auto h-full flex items-center justify-center">
+                <p class="text-white">Scroll down for more</p>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Skills Section -->
+    <section class="bg-gray-200 py-16 px-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Skills & Expertise</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Example Skill (repeat as needed) -->
+                <div class="bg-white p-6 rounded-lg shadow-md grid grid-rows-3" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                    <p class="text-gray-600">HTML, CSS, JavaScript, React, Node.js, etc.</p>
+                    <div class="flex items-center">
+                        <div class="relative h-fit w-full bg-gray-200 rounded-full">
+
+                            <div class="py-1 rounded-full w-[92%] text-xs bg-orange-400"></div>
+                            <span class="absolute">92%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md grid grid-rows-3" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-bold mb-2">Graphic Design</h3>
+                    <p class="text-gray-600">Adobe Photoshop, Illustrator, InDesign, etc.</p>
+                    <div class="flex items-center">
+                        <div class="relative h-fit w-full bg-gray-200 rounded-full ">
+                            <div class="py-1 rounded-full w-[86%] text-xs bg-orange-400"></div>
+                            <span class="absolute">86%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md grid grid-rows-3" data-aos="fade-up" data-aos-delay="600">
+                    <h3 class="text-xl font-bold mb-2">Content Writing</h3>
+                    <p class="text-gray-600">Blogging, Copywriting, SEO, etc.</p>
+                    <div class="flex items-center">
+                        <div class="relative h-fit w-full bg-gray-200 rounded-full">
+                            <div class="py-1 rounded-full w-[70%] text-xs bg-orange-400"></div>
+                            <span class="absolute">70%</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="bg-gray-100 py-16 px-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8" data-aos="fade-up">Our Services</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card (repeat as needed) -->
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+                    <div class="mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="h-12 w-12 mx-auto text-teal-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14a6 6 0 100 12 6 6 0 000-12zm-1 10h2v-2h-2v2z">
+                            </path>
+                        </svg>
+
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Web Design</h3>
+                    <p class="text-gray-600 mb-4">Modern and responsive web design to make your online presence stand
+                        out.</p>
+                    <a href="#" class="text-teal-500 hover:underline">Learn More</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="h-12 w-12 mx-auto text-teal-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 15a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Digital Marketing</h3>
+                    <p class="text-gray-600 mb-4">Strategic digital marketing solutions to boost your online presence
+                        and reach your target audience.</p>
+                    <a href="#" class="text-teal-500 hover:underline">Learn More</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <div class="mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="h-12 w-12 mx-auto text-teal-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M2 17.6L12 2l10 15.6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Content Creation</h3>
+                    <p class="text-gray-600 mb-4">Engaging and high-quality content creation services for your website
+                        or social media platforms.</p>
+                    <a href="#" class="text-teal-500 hover:underline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Showcase Carousel Section -->
+    <section class="relative bg-gray-100 pb-8 ">
+        <h2 class="text-3xl font-bold mb-8 text-center" data-aos="fade-up">My Work Showcase</h2>
+        <div class="relative container mx-auto  overflow-hidden">
+
+            <!-- Add more work items as needed -->
+            <section id="carousel" class="w-auto  flex " data-aos="fade-up">
+                <div class="carousel-item min-w-[100%] h-auto p-4 bg-rose-300">
+                    <img class="h-96 w-full" src="" alt="baner_project">
+                </div>
+                <div class="carousel-item min-w-[100%] h-auto p-4 bg-cyan-300">
+                    <img class="h-96 w-full" src="" alt="baner_project">
+                </div>
+                <div class="carousel-item min-w-[100%] h-auto p-4 bg-green-300">
+                    <img class="h-96 w-full" src="" alt="baner_project">
+                </div>
+                <div class="carousel-item min-w-[100%] h-auto p-4 bg-blue-300">
+                    <img class="h-96 w-full" src="" alt="baner_project">
+                </div>
+                <div class="carousel-item min-w-[100%] h-auto p-4 bg-teal-300">
+                    <img class="h-96 w-full" src="" alt="baner_project">
+                </div>
+                <div class="carousel-item min-w-[100%] h-auto p-4 bg-gray-300">
+                    <img class="h-96 w-full" src="" alt="baner_project">
+                </div>
+            </section>
+
+
+            <!-- Carousel Buttons -->
+            <div class="absolute w-full bottom-[50%] px-10  bg-fuchsia-300  flex items-center justify-between" >
+
+                <button id="left_btn" 
+                    class="absolute left-5 flex items-center justify-center  cursor-pointer h-12 w-12 rounded-full bg-[rgba(0,0,0,.1)]">
+                    <i>&lt;</i>
+                </button>
+                <button id="right_btn"
+                    class=" absolute right-5 items-center justify-center  cursor-pointer h-12 w-12 rounded-full bg-[rgba(0,0,0,.1)]">
+                    <i>&gt;</i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Blog Section -->
+    <section class="container mx-auto my-8 px-10">
+        <h2 class="text-3xl text-center font-bold mb-6">Latest Blog Posts</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Example Blog Post Card (repeat as needed) -->
+            <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+                <img src="blog-image1.jpg" alt="Blog Post Image" class="mb-4 rounded-lg w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mb-2">Blog Post Title 1</h3>
+                <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="text-teal-500 hover:underline">Read more</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                <img src="blog-image2.jpg" alt="Blog Post Image" class="mb-4 rounded-lg w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mb-2">Blog Post Title 2</h3>
+                <p class="text-gray-600 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur.</p>
+                <a href="#" class="text-teal-500 hover:underline">Read more</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="400">
+                <img src="blog-image3.jpg" alt="Blog Post Image" class="mb-4 rounded-lg w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mb-2">Blog Post Title 3</h3>
+                <p class="text-gray-600 mb-4">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+                <a href="#" class="text-teal-500 hover:underline">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto my-16 px-10">
+        <h2 class="text-3xl font-bold mb-6 text-center" data-aos="fade-up">Get in Touch</h2>
+        <div class="flex justify-center" data-aos="fade-up" data-aos-delay="200">
+            <form class="w-full max-w-lg">
+                <!-- ... (unchanged contact form code) ... -->
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
+                            Name
+                        </label>
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            id="name" type="text" placeholder="Your Name">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+                            Email
+                        </label>
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                            id="email" type="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
+                            Message
+                        </label>
+                        <textarea
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            id="message" rows="6" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <div class="md:flex md:items-center">
+                    <button
+                        class="shadow bg-teal-500 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                        type="button">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="bg-gray-300 py-8 px-10">
+        <div class="container mx-auto px-4 py-8">
+            <h2 class="text-2xl font-bold mb-8 text-center">Trusted by Leading Brands</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8">
+                <div class="testimonial rounded-lg overflow-hidden shadow-md flex flex-col p-8 text-center bg-gray-100"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <img src="client-1.jpg" alt="Client 1 Image"
+                        class="h-24 w-24 rounded-full mx-auto mb-4 border-2 border-gray-200 hover:border-gray-300 transition ease-in-out duration-150">
+                    <p class="text-lg text-gray-700 leading-relaxed">"[Your Name]'s expertise and passion for design
+                        helped us create a website that truly reflects our brand identity and resonates with our target
+                        audience. We've seen a significant increase in engagement and conversions since launch."</p>
+                    <h3 class="text-gray-900 font-semibold mb-2">Sarah Jones - Marketing Director, BrandX</h3>
+                    <a href="https://brandx.com/" class="text-sm text-teal-500 hover:underline mt-2">Visit BrandX
+                        Website</a>
+                </div>
+                <div class="testimonial rounded-lg overflow-hidden shadow-md flex flex-col p-8 text-center bg-gray-100"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <img src="client-2.jpg" alt="Client 2 Image"
+                        class="h-24 w-24 rounded-full mx-auto mb-4 border-2 border-gray-200 hover:border-gray-300 transition ease-in-out duration-150">
+                    <q class="text-lg text-gray-700 leading-relaxed font-italic">“Working with [Your Name] was a breeze.
+                        Their responsiveness, clear communication, and commitment to deadlines made the entire process
+                        smooth and stress-free. I highly recommend them to anyone looking for a talented and reliable
+                        designer.”</q>
+                    <h3 class="text-gray-900 font-semibold mb-2">Michael Lee - CEO, Tech Solutions Inc.</h3>
+                    <a href="#" class="text-sm text-teal-500 hover:underline mt-2">Learn More
+                        About Tech Solutions</a>
+                </div>
+                <div class="testimonial rounded-lg overflow-hidden shadow-md flex flex-col p-8 text-center bg-gray-100"
+                    data-aos="fade-up" data-aos-delay="600">
+                    <img src="client-3.jpg" alt="Client 3 Image"
+                        class="h-24 w-24 rounded-full mx-auto mb-4 border-2 border-gray-200 hover:border-gray-300 transition ease-in-out duration-150">
+                    <p class="text-lg text-gray-700 leading-relaxed">“[Your Name] is a true problem solver. They
+                        listened carefully to our needs and challenges, then came up with innovative and effective
+                        design solutions that exceeded our expectations. We're thrilled with the results and will
+                        definitely be working with them again in the future.”</p>
+                    <h3 class="text-gray-900 font-semibold mb-2">Emily Garcia - Founder, Creative Agency</h3>
+                    <a href="https://creativeagency.com/" class="text-sm text-teal-500 hover:underline mt-2">Learn More
+                        About Creative Agency</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Your Blog Portfolio. All rights reserved.</p>
+            <!-- Add social media icons and links, additional information, etc. -->
+        </div>
+    </footer>
+
+    <!-- Alpine.js for animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize AOS library for scroll animations
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+            });
+        });
+    </script>
+
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Your existing head content -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js" defer></script>
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>About Me - Your Blog Portfolio</title>
+
+    <!-- Additional styles for the about page -->
+    <style>
+        .profile-image {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans  ">
+
+    <!-- Navigation -->
+    <nav id="nav_bar" class="bg-teal-500  p-4 text-white fixed top-0 left-0 right-0 z-50 ">
+        <div class="container mx-auto flex justify-between items-center ">
+            <div class="text-xl font-bold ">YourLogo</div>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li><a href="/blog.html" class="hover:underline">Blog</a></li>
+                <li><a href="/about.html" class="hover:underline">About</a></li>
+                <li><a href="/contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- About Me Section -->
+    <section class="bg-white py-16  h-screen">
+        <div class="container mx-auto flex flex-col items-center">
+            <img src="profile-image.jpg" alt="Your Profile Image" class="profile-image mb-8" data-aos="fade-up">
+            <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">About Me</h2>
+            <p class="text-gray-600 text-center max-w-2xl mb-8" data-aos="fade-up">Hello! I'm [Your Name], a passionate web developer and blogger. I have a strong background in web technologies, including HTML, CSS, JavaScript, React, and Node.js. My goal is to create innovative and user-friendly websites that make a positive impact.</p>
+            <p class="text-gray-600 text-center max-w-2xl mb-8" data-aos="fade-up">In addition to my technical skills, I am dedicated to continuous learning and staying updated with the latest trends in web development. I love sharing my knowledge through blogging and helping others succeed in their web development journey.</p>
+            <p class="text-gray-600 text-center max-w-2xl" data-aos="fade-up">Feel free to explore my portfolio and get in touch if you have any inquiries or collaboration opportunities. Let's create something amazing together!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 mt-auto absolute bottom-0 w-full">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Your Blog Portfolio. All rights reserved.</p>
+            <!-- Add social media icons and links, additional information, etc. -->
+        </div>
+    </footer>
+
+    <!-- Alpine.js for animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize AOS library for scroll animations
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+            });
+        });
+    </script>
+
+</body>
+
+</html> 

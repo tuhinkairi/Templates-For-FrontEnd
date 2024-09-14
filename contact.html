@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Your existing head content -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js" defer></script>
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/slider.css">
+    <title>Contact Me - Your Blog Portfolio</title>
+</head>
+
+<body class="bg-gray-100 font-sans relative">
+    <!-- Navigation -->
+    <nav id="nav_bar" class="bg-teal-500  p-4 text-white fixed top-0 left-0 right-0 z-50 ">
+        <div class="container mx-auto flex justify-between items-center ">
+            <div class="text-xl font-bold ">YourLogo</div>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li><a href="/blog.html" class="hover:underline">Blog</a></li>
+                <li><a href="/about.html" class="hover:underline">About</a></li>
+                <li><a href="/contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Contact Me Section -->
+    <section class="bg-white py-16 min-h-screen">
+        <div class="container mx-auto flex flex-col items-center">
+            <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Contact Me</h2>
+            <p class="text-gray-600 text-center max-w-2xl mb-8" data-aos="fade-up">I would love to hear from you! If you have any questions, collaboration ideas, or just want to say hello, feel free to reach out. Fill out the form below, and I'll get back to you as soon as possible.</p>
+
+            <!-- Contact Form -->
+            <form class="max-w-md w-full" data-aos="fade-up" data-aos-delay="200">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
+                    <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 rounded-md" placeholder="John Doe" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email</label>
+                    <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 rounded-md" placeholder="john@example.com" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 p-2 rounded-md" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-400 focus:outline-none focus:shadow-outline-blue">Send Message</button>
+            </form>
+        </div>
+        
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 mt-auto ">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Your Blog Portfolio. All rights reserved.</p>
+            <!-- Add social media icons and links, additional information, etc. -->
+        </div>
+    </footer>
+
+    <!-- Alpine.js for animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize AOS library for scroll animations
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+            });
+        });
+    </script>
+
+</body>
+
+</html>
